@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Elements Demo</h1>
+    </header>
+    
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label>
+            <br><br>
+            
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <br><br>
+            
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="sports"> <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music"> <label for="music">Music</label>
+            <input type="checkbox" id="reading" name="interests" value="reading"> <label for="reading">Reading</label>
+            <br><br>
+            
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contacts Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St</td>
+                <td>123-456-7890</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak St</td>
+                <td>234-567-8901</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td>789 Pine St</td>
+                <td>345-678-9012</td>
+                <td>bob@example.com</td>
+            </tr>
+            <tr>
+                <td>Alice Brown</td>
+                <td>321 Cedar St</td>
+                <td>456-789-0123</td>
+                <td>alice@example.com</td>
+            </tr>
+            <tr>
+                <td>Mike Wilson</td>
+                <td>654 Birch St</td>
+                <td>567-890-1234</td>
+                <td>mike@example.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Multimedia Elements -->
+    <section>
+        <h2>Multimedia</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br><br>
+        <video controls width="600">
+            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List</h2>
+        <ol type="I">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+    </section>
+    
+    <!-- External Image -->
+    <section>
+        <h2>External Image</h2>
+        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg" alt="Sample Image from Pexels" width="900" height="600">
+    </section>
+
+    
+</body>
+</html>
