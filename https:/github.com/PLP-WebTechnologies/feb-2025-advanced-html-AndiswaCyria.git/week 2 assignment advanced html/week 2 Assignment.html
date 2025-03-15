@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Week 2 Web development">
+    <meta name="author" content="Andiswa Cyria">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 HTML</title>
+    <link rel="stylesheet" type="text/css" href="Week%202.css">
+    <style>
+        table, th, td {
+            border: 1px solid white;
+            border-collapse: collapse;
+          }
+          th, td {
+            background-color: #96D4D4;
+          }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Week 2 Assigment HTML 5</h1>
+    <h1>Contents</h1>
+    <nav>
+        <ol>
+            <li><a href="#enhancing-content">Enhancing Content</a></li>
+            <ul>
+                <li>Embedding a video</li>
+                <li>Embedding a photo</li>
+                <li>Creating a table</li>
+            </ul>
+            <li><a href="#building-forms">Building Forms</a></li>
+            <ul>
+                <li>Creating a form</li>
+                <li>User Details</li>
+                <li>Home address details</li>
+        </ol>
+    <h1>Week 2 Enhancing Content and Building Forms</h1>
+</header>
+
+
+    <h1>Enhancing Content</h1>
+    <h2>Embedding a video</h2>
+    <p>Here is a video of a cat playing the piano.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/J---aiyznGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+    <p>Here is an example of embedding a photo</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw3umZSEQECCdIBXSYL6y4aqyhmXPmTnwVjQ&s" alt="treehouse.com" width="400" height="300">
+
+    <p>Here is a table for today's content</p>
+    <table>
+        <tr>
+          <th>Section 1</th>
+          <th>Section 2</th>
+          <th>Section 3</th>
+        </tr>
+        <tr>
+          <td>Cat playing a piano</td>
+          <td>HMTL Learning</td>
+          <td>Country</td>
+        </tr>
+        <tr>
+          <td>Cool site</td>
+          <td>Learning</td>
+          <td>South Africa</td>
+        </tr>
+      </table>
+
+    <h2>HTML5 Form Elements</h2>
+    <p>Here are some of the Form element prompts.</p>
+    <input type="text" name="username" placeholder="Enter your name">
+    <textarea name="comments" rows="4" cols="50" placeholder="Write your comments here"></textarea>
+    <button type="submit">Submit</button>
+
+    <select name="country">
+        <option value="South Africa">RSA</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Nigeria">Nigeria</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <h2>Form and Attributes and HTML5 Validation</h2>
+    <p>Here are some validation examples</p>
+    <label for="cohort">Cohort:</label>
+    <input type="text" name="cohort?" required>
+
+
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" minlength="8" maxlength="20">
+
+
+
+
+    <label for="age">Age:</label>
+    <input type="number" name="age" min="18" max="100">
+ 
+    <h2>Accessible Forms with Labels and Fieldsets</h2>
+    <p>Here are some examples of accessible forms</p>
+    <label for name="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <fieldset>
+        <legend>Address</legend>
+        <label for="street">Street:</label>
+        <input type="text" name="street" id="street">
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+        <label for="zip">Zip:</label>
+        <input type="text" name="zip" id="zip">
+    </fieldset>
+
+
+</body>
+
+
+
+
+<footer>
+    <p>&copy; 2025 Andiswa Cyria. All rights reserved</p>
+</footer>
+
+</html>
