@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWorld</title>
+</head>
+<body>
+    <!-- header acts as the title of the page -->
+    <header>
+        <h1>CodeWorld Academy</h1>
+    </header>
+    <!-- nav acts a guide to the different sections of the page -->
+    <nav>
+        <a href="#about" target="_self">About Us</a> |
+        <a href="#students" target="_self">Our Students</a> |
+        <a href="#join" target="_self">Get Started</a> 
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to CodeWorld Academy! We teach programming, web development, and networking to help students build successful tech careers.</p>
+            <p>Our courses are designed to be hands-on and practical, ensuring that our students are job-ready upon completion. We have state-of-the-art facilities and experienced instructors who are dedicated to helping our students succeed.</p>
+        </section>
+        <section>
+            <h3>January Intake Ongoing</h3>
+            <p>
+                <a href="#join" target="_self">Get Started Today!</a>
+            </p>
+        </section>
+        <section id="students">
+            <h2>Our Students</h2>
+            <p>Our students come from diverse backgrounds, some starting fresh in tech while others upgrade their skills. No matter the goal, we are here to help them succeed!</p>
+            <p>Best students for year 2024:</p>
+            <table border="1">
+                <!-- for the table headers, use <thead> and <th> elements -->
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <!-- for the table body, use <tbody> and <tr> elements -->  
+                <tbody>
+                    <tr>
+                        <td>John Miluka</td>
+                        <td>123, Nairobi</td>
+                        <td>0700123123</td>
+                        <td>jnmiluka@hotmail.com</td>   
+                    </tr>
+                    <tr>
+                        <td>Alexa Omo</td>
+                        <td>24155, Mombasa</td>
+                        <td>0712000000</td>
+                        <td>aomo@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Agnes Muenda</td>
+                        <td>111, Meru</td>
+                        <td>0713124124</td>
+                        <td>amuenda@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Kirr Karna</td>
+                        <td>322, Mandera</td>
+                        <td>0712456456</td>
+                        <td>kKarna@codeworld.ac.ke</td>
+                    </tr>
+                    <tr>
+                        <td>Winnie Kibet</td>
+                        <td>123, Eldoret</td>
+                        <td>0710101100</td>
+                        <td>wKibet@codeworld.ac.ke</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- use section to group related contents together -->
+        <section id="join">
+            <h2>Get Started</h2>
+            <p>Fill in form below with your details. Our dedicated team will reach out to you.</p>
+            <form action=" " method="">
+                <!-- group related contents in a fieldset -->
+                <fieldset> 
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Full Name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@example.com" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="4" maxlength="12" placeholder="Password goes here ..."  required><br><br>
+
+                    <p>Gender: </p>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label><br>
+
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label><br>
+
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">other</label><br><br>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="16" max="55" required step="1" ><br><br>
+                </fieldset> 
+
+                <fieldset>
+                    <legend>Course of Interest</legend>
+
+                    <input type="checkbox" id="programming" name="programming" value="programming">
+                    <label for="programming">Programming</label><br>
+
+                    <input type="checkbox" id="web" name="web" value="web Development">
+                    <label for="web">Web Development</label><br>
+
+                    <input type="checkbox" id="networking" name="networking" value="networking">
+                    <label for="networking">Networking</label><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Session of Choice</legend>
+                    
+                    <input type="radio" id="morning" name="session" value="Morning">
+                    <label for="morning">Morning</label><br>
+                
+                    <input type="radio" id="afternoon" name="session" value="Afternoon">
+                    <label for="afternoon">Afternoon</label><br>
+                
+                    <input type="radio" id="evening" name="session" value="Evening">
+                    <label for="evening">Evening</label><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Education</legend>
+                    <label for="education">Highest education achievement</label>
+                    <select id="education" name="education">
+                        <option value="Primary">Primary</option>
+                        <option value="Secondary">Secondary</option>
+                        <option value="High School">High School</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Degree">Degree</option>
+                        <option value="Masters">Masters</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Start Date</legend>
+                    <p>When are you willing to join us?</p>
+                    <input type="date" id="date" name="date" required min="2025-03-01" max="2025-12-31"><br><br>
+                </fieldset>
+
+                <!-- to post the form data to a server, use the <input> element with type="submit" -->
+                <input type="submit" value="Register">
+                <!-- to clear the form data, use the <input> element with type="reset" -->
+                <input type="reset" value="Cancel"><br><br>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
