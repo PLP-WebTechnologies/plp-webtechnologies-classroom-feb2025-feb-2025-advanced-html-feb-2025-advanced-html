@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My website</h1>
+    </header>
+    
+    <section>
+        <h2>Ordered List</h2>
+        <ol type="">
+            <li>Manchester United</li>
+            <li>Chelsea</li>
+            <li>Liverpool</li>  
+            <li>Manchester City</li>
+            <li>Arsenal</li>
+            <li>Tottenham Hotspur</li>
+            
+           
+        </ol>
+    </section>
+<!-- external image section -->
+    <section>
+        <h2>External Image</h2>
+        <img src="https://images.pexels.com/photos/26238873/pexels-photo-26238873/free-photo-of-a-drink-topped-with-a-slice-of-orange-standing-on-the-edge-of-a-plant-pot.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Sample Image from Pexels" width="300">
+    </section>
+<!-- table section -->
+    <section>
+        <h2>Contact Table</h2>
+        <table >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Waluke</td>
+                    <td>Moi Avenue, Nairobi</td>
+                    <td>+254712345678</td>
+                    <td>johnwaluke@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Wanjiru</td>
+                    <td>Uhuru Street, Mombasa</td>
+                    <td>+254798765432</td>
+                    <td>janewanjiru@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Mark Otieno</td>
+                    <td>Kisumu Road, Kisumu</td>
+                    <td>+254711223344</td>
+                    <td>markotieno@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Lisa Njeri</td>
+                    <td>Thika Superhighway, Nairobi</td>
+                    <td>+254755667788</td>
+                    <td>lisanjeri@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Tom Mwangi</td>
+                    <td>Ngong Road, Nairobi</td>
+                    <td>+254799887766</td>
+                    <td>tommwangi@gmail.com</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">Kenya</option>
+                <option value="uk">Nigeria</option>
+                <option value="canada">South Africa</option>
+                <option value="australia">Ethiopia</option>
+            </select><br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+<!-- multimedia section -->
+    <section>
+        <h2>Multimedia Elements</h2>
+        <h3>Audio</h3>
+        <audio controls autoplay loop>
+            <source src="audio1.mp3" type="audio/mpeg">
+        </audio>
+        
+        <h3>Video</h3>
+        <video controls autoplay loop width="500">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+</body>
+</html>
