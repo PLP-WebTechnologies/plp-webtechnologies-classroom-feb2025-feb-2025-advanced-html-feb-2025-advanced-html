@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Document with images, lists, tables, forms, and multimedia elements">
+    <title>HTML5 Implementation</title>
+</head>
+<body>
+    <h1>Topics</h1>
+    <ol type="I">
+        <li>Introduction</li>
+        <li>Features</li>
+        <li>Applications</li>
+    </ol>
+    <h1>External Image</h1>
+    <img src="https://www.pexels.com/photo/some-image-path/" alt="Sample Image from Pexels" width="500">
+
+    <h1>Contact Information</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St, Nairobi</td>
+                <td>+254700123456</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Elm St, Machakos</td>
+                <td>+254711654321</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>Ali Yusuf</td>
+                <td>789 Oak St, Kitui</td>
+                <td>+254722987654</td>
+                <td>aliyusuf@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary Wanjiru</td>
+                <td>321 Pine St, Thika</td>
+                <td>+254733456789</td>
+                <td>marywanjiru@example.com</td>
+            </tr>
+            <tr>
+                <td>Peter Otieno</td>
+                <td>654 Cedar St, Kisumu</td>
+                <td>+254744987123</td>
+                <td>peterotieno@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+        </select>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <br><br>
+        <button type="submit">Register</button>
+        <button type="cancel">Cancel</button>
+    </form>
+</body>
+</html>
