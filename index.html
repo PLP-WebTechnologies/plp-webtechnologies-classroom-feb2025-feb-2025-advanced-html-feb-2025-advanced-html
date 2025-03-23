@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character encoding and responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the webpage -->
+  <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+  <!-- Main heading of the webpage -->
+  <h1>Welcome to My Multimedia-Rich Webpage</h1>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>Ordered List with Roman Numerals</h2>
+  <ol type="I">
+    <li>First Item</li> <!-- First list item -->
+    <li>Second Item</li> <!-- Second list item -->
+    <li>Third Item</li> <!-- Third list item -->
+    <li>Fourth Item</li> <!-- Fourth list item -->
+    <li>Fifth Item</li> <!-- Fifth list item -->
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>External Image</h2>
+  <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" alt="Nature Image" width="500">
+  <!-- The `src` attribute specifies the image URL, and `alt` provides alternative text for accessibility -->
+
+  <!-- Table of 5 Contacts -->
+  <h2>Contact Table</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th> <!-- Table header for Name -->
+        <th>Address</th> <!-- Table header for Address -->
+        <th>Mobile</th> <!-- Table header for Mobile -->
+        <th>Email</th> <!-- Table header for Email -->
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row 1 -->
+      <tr>
+        <td>John Doe</td> <!-- Name -->
+        <td>123 Main St</td> <!-- Address -->
+        <td>555-1234</td> <!-- Mobile -->
+        <td>john@example.com</td> <!-- Email -->
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td>Jane Smith</td>
+        <td>456 Elm St</td>
+        <td>555-5678</td>
+        <td>jane@example.com</td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <td>Alice Johnson</td>
+        <td>789 Oak St</td>
+        <td>555-9101</td>
+        <td>alice@example.com</td>
+      </tr>
+      <!-- Row 4 -->
+      <tr>
+        <td>Bob Brown</td>
+        <td>101 Pine St</td>
+        <td>555-1122</td>
+        <td>bob@example.com</td>
+      </tr>
+      <!-- Row 5 -->
+      <tr>
+        <td>Charlie Davis</td>
+        <td>202 Maple St</td>
+        <td>555-3344</td>
+        <td>charlie@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Registration Form</h2>
+  <form action="#" method="post">
+    <!-- Name Field -->
+    <label for="name">Name:</label> <!-- Label for the name field -->
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <!-- `placeholder` provides a hint, and `required` ensures the field is filled -->
+
+    <!-- Email Field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <!-- `type="email"` ensures the input is a valid email address -->
+
+    <!-- Password Field -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    <!-- `type="password"` hides the input for security -->
+
+    <!-- Date Field -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <!-- `type="date"` provides a date picker -->
+
+    <!-- Dropdown Menu -->
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select your country</option> <!-- Default option -->
+      <option value="usa">USA</option> <!-- Option 1 -->
+      <option value="canada">Canada</option> <!-- Option 2 -->
+      <option value="uk">UK</option> <!-- Option 3 -->
+      <option value="australia">Australia</option> <!-- Option 4 -->
+    </select>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label> <!-- Radio button for Male -->
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label> <!-- Radio button for Female -->
+
+    <!-- Checkboxes -->
+    <label>Interests:</label>
+    <input type="checkbox" id="sports" name="interests" value="sports">
+    <label for="sports">Sports</label> <!-- Checkbox for Sports -->
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label> <!-- Checkbox for Music -->
+    <input type="checkbox" id="travel" name="interests" value="travel">
+    <label for="travel">Travel</label> <!-- Checkbox for Travel -->
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+  </form>
+
+  <!-- Audio Element -->
+  <h2>Audio Element</h2>
+  <audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element. <!-- Fallback message -->
+  </audio>
+  <!-- `controls` adds play, pause, and volume controls -->
+
+  <!-- Video Element -->
+  <h2>Video Element</h2>
+  <video controls width="500">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video element. <!-- Fallback message -->
+  </video>
+  <!-- `controls` adds play, pause, and volume controls -->
+</body>
+</html>
