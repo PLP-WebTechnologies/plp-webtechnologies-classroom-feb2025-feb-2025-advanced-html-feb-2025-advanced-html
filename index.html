@@ -1,0 +1,112 @@
+<!DOCtype html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advance html elements and form</title>
+    </head>
+<body>
+    <h1>What you would learn on this site</h1>
+    <ol type="i">
+      <li>Table</li>
+      <li>forms</li>
+      <li>pictures</li>
+      <li>video</li>
+      <li>audio</li>
+    </ol>
+    <img src="pexels-photo-5593515.jpeg" alt="image from pexels.com" width="150" height="160">
+    <form action="submit" method="post">
+           
+        <!-- Registration Form Starts Here -->
+        <form action="/submit-registration" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        <br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <!-- Dropdown Menu -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="ghana">Ghana</option>
+            <option value="kenya">Kenya</option>
+            <option value="South Africa">Kenya</option>
+            </select>
+            <br><br>
+    <!-- Radio Buttons -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+<!-- Checkboxes -->
+            <p>Interests:</p>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label>
+            <br>
+
+<!-- Submit Button -->
+            <button type="submit">Register</button>
+    </form>
+<!-- Registration Form Ends Here -->
+ <br>
+</body>
+
+<footer>
+    <table name="contacts" border="2">
+        <tr>
+            <th>Name</th>
+            <th>Adebisi Oluwa</th>
+            <th>Eric Mokolo</th>
+            <th>Chris P</th>
+            <th>Dare</th>
+            <th>Pele</th>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <th>Beltmore, Uk</th>
+            <th>Welsh, Ireland</th>
+            <th>Abuja, Nigeria</th>
+            <th>Kenya</th>
+            <th>London</th>
+        </tr>
+        <tr>
+            <th>Mobile</th>
+            <th>009566849455</th>
+            <th>896089800011</th>
+            <th>0145690442</th>
+            <th>248906894541</th>
+            <th>014560984244</th>
+        </tr>
+        <tr>
+            <th>email</th>
+            <th>qb@wew.com</th>
+            <th>ebony@toroto.com</th>
+            <th>mokolo@plp.com</th>
+            <th>engine@rest.edu</th>
+            <th>gg@essay.org</th>
+        </tr>
+    </table>
+</footer>
+</html>
