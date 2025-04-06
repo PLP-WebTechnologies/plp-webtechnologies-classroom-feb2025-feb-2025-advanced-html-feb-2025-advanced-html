@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage with Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .media-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .media-box {
+            width: 48%;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Multimedia Experience</h1>
+        <p>Explore our content and join our community</p>
+    </header>
+
+    <section>
+        <h2>Multimedia Content</h2>
+        <div class="media-container">
+            <div class="media-box">
+                <h3>Audio Player</h3>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Listen to our sample audio track.</p>
+            </div>
+            <div class="media-box">
+                <h3>Video Player</h3>
+                <video width="100%" controls>
+                    <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Watch our sample video content.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Image</h2>
+        <img src="https://source.unsplash.com/random/800x400/?nature" alt="Beautiful nature scene">
+        <p>This is a randomly selected nature image from Unsplash.</p>
+    </section>
+
+    <section>
+        <h2>Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>Electronics</td>
+                    <td>$899.99</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td>Electronics</td>
+                    <td>$699.99</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>Desk Chair</td>
+                    <td>Furniture</td>
+                    <td>$199.99</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Coffee Maker</td>
+                    <td>Appliances</td>
+                    <td>$49.99</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Design and Development</li>
+            <li>Graphic Design</li>
+            <li>Digital Marketing
+                <ul>
+                    <li>SEO Services</li>
+                    <li>Social Media Management</li>
+                    <li>PPC Advertising</li>
+                </ul>
+            </li>
+            <li>Content Creation</li>
+            <li>Video Production</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name" class="required">Full Name</label>
+                <input type="text" id="name" name="name" required minlength="3" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="required">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="required">Password</label>
+                <input type="password" id="password" name="password" required minlength="8" 
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" 
+                       title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters"
+                       placeholder="Create a password">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                       placeholder="123-456-7890">
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="interests">Interests (Select multiple)</label>
+                <select id="interests" name="interests" multiple size="4">
+                    <option value="technology">Technology</option>
+                    <option value="sports">Sports</option>
+                    <option value="music">Music</option>
+                    <option value="travel">Travel</option>
+                    <option value="reading">Reading</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="terms" required> I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+            </div>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted successfully! (This is a demo)');
+            // In a real application, you would handle form submission here
+        });
+    </script>
+</body>
+</html>
