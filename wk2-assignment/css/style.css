@@ -1,0 +1,51 @@
+.legend{
+    background-color: rgb(243, 243, 60);
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    margin: 10px 15px;  
+    display: block;
+    justify-content: center;
+}
+.giphy-embed{
+    display: flex;
+}
+.container{
+    display: block;
+    text-decoration: solid;
+
+    
+}
+.text{
+    margin-left: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+tr:hover {
+    background-color: #eef1f5;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
